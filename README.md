@@ -48,6 +48,17 @@ Given the hash above, complete the following:
 ### Your HTML form here:
 
 ```html
+<html>
+  <div>
+    <form  action="/user"  method="put">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <input type="text" name="user['username']">
+        <input type="text" email="user['email']">
+        <input type="password" name="user['password']">
+        <input type="password" name="user['password_confirm']">
+    </form>    
+  </div> 
+</html>
 ```
 
 
